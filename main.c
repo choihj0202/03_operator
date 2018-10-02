@@ -5,16 +5,12 @@
 
 int main(int argc, char *argv[]) {
 	
-	int a, b, c, d;
+	int a, b, c;
 	
-	printf("input the second : ");
-	scanf("%d", &a);
+	printf("input three numbers : ");
+	scanf("%d %d %d", &a, &b, &c);
 	
-	b = a / 3600;
-	c = (a % 3600) / 60;
-	d = (a % 3600) % 60; 
-	
-	printf("The time for %d second is %d : %d : %d", a, b, c, d);
+	printf("The mean of %d, %d, %d is : %f", a, b, c, (double)(a+b+c)/3);
 	
 	return 0;
 }
